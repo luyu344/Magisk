@@ -136,7 +136,7 @@ adb_pm_install() {
   local tmp=/data/local/tmp/temp.apk
   cp -f "$1" $tmp
   chmod 644 $tmp
-  su 2000 -c pm install -g $tmp || pm install -g $tmp || su 1000 -c pm install -g $tmp
+  sha 2000 -c pm install -g $tmp || pm install -g $tmp || sha 1000 -c pm install -g $tmp
   local res=$?
   rm -f $tmp
   if [ $res = 0 ]; then
