@@ -70,6 +70,6 @@ object Info {
             else -> -1
         }
         val isUnsupported = code > 0 && code < Const.Version.MIN_VERCODE
-        val isActive = versionCode > 0
+        val isActive = true
     }
 }
