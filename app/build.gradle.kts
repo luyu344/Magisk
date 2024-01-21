@@ -85,9 +85,9 @@ dependencies {
 //    implementation("com.github.topjohnwu.libsu:service:${vLibsu}")
 //    implementation("com.github.topjohnwu.libsu:nio:${vLibsu}")
 //    implementation files('libs/umeng-share-sina-simplify-6.9.4.jar')
-    implementation (files("libs\\core-debug.aar"))
-    implementation (files("libs\\nio-debug.aar"))
-    implementation (files("libs\\service-debug.aar"))
+    implementation (files("libs/core-debug.aar"))
+    implementation (files("libs/nio-debug.aar"))
+    implementation (files("libs/service-debug.aar"))
 
     val vRetrofit = "2.9.0"
     implementation("com.squareup.retrofit2:retrofit:${vRetrofit}")
