@@ -104,8 +104,6 @@ class MainActivity : SplashActivity<ActivityMainMd2Binding>() {
         binding.mainNavigation.menu.apply {
             findItem(R.id.superuserFragment)?.isEnabled = Info.showSuperUser
             findItem(R.id.modulesFragment)?.isEnabled = Info.env.isActive && LocalModule.loaded()
-//            findItem(R.id.superuserFragment)?.isEnabled = true
-//            findItem(R.id.modulesFragment)?.isEnabled = true
         }
 
         val section =
