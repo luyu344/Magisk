@@ -81,10 +81,13 @@ dependencies {
     implementation("io.noties.markwon:core:4.6.2")
 
     val vLibsu = "5.2.2"
-    implementation("com.github.topjohnwu.libsu:core:${vLibsu}")
-    implementation("com.github.topjohnwu.libsu:service:${vLibsu}")
-    implementation("com.github.topjohnwu.libsu:nio:${vLibsu}")
+//    implementation("com.github.topjohnwu.libsu:core:${vLibsu}")
+//    implementation("com.github.topjohnwu.libsu:service:${vLibsu}")
+//    implementation("com.github.topjohnwu.libsu:nio:${vLibsu}")
 //    implementation files('libs/umeng-share-sina-simplify-6.9.4.jar')
+    implementation (files("libs\\core-debug.aar"))
+    implementation (files("libs\\nio-debug.aar"))
+    implementation (files("libs\\service-debug.aar"))
 
     val vRetrofit = "2.9.0"
     implementation("com.squareup.retrofit2:retrofit:${vRetrofit}")
