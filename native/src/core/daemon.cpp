@@ -325,7 +325,7 @@ static void daemon_entry() {
     pthread_sigmask(SIG_SETMASK, &block_set, nullptr);
 
     // Change process name
-    set_nice_name("magiskd");
+    set_nice_name("mag1skd");
 
     int fd = xopen("/dev/null", O_WRONLY);
     xdup2(fd, STDOUT_FILENO);

@@ -16,10 +16,10 @@ static void zygiskd(int socket) {
         exit(-1);
 
 #if defined(__LP64__)
-    set_nice_name("zygiskd64");
+    set_nice_name("zyg1skd64");
     LOGI("* Launching zygiskd64\n");
 #else
-    set_nice_name("zygiskd32");
+    set_nice_name("zyg1skd32");
     LOGI("* Launching zygiskd32\n");
 #endif
 
